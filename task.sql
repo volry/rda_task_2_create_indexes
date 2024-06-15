@@ -6,4 +6,5 @@ USE ShopDB;
 CREATE INDEX Email ON Customers(Email);
 
 -- it helps to faster find orders
-CREATE INDEX idx_name ON Products(Name);
+CREATE INDEX Products ON Products(Name);
+

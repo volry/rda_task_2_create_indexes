@@ -10,3 +10,10 @@ CREATE INDEX Date ON Orders(Date);
 
 -- it also need to speed up product search
 CREATE INDEX Name ON Products(Name);
+
+-- orders index for id
+CREATE INDEX idx_customer_id ON Orders (CustomerID);
+
+-- indexes for foreign keys in 
+CREATE INDEX idx_order_id ON OrderItems (OrderID);
+CREATE INDEX idx_product_id ON OrderItems (ProductID);

@@ -22,3 +22,4 @@ CREATE INDEX idx_product_id ON OrderItems (ProductID);
 CREATE INDEX pk_products_id ON Products(ID);
 CREATE INDEX pk_customers_id ON Customers(ID);
 CREATE INDEX pk_orders_id ON Orders(ID);
+CREATE INDEX pk_orderitems_id ON OrderItems(ID);

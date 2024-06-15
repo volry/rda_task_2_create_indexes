@@ -17,3 +17,8 @@ CREATE INDEX idx_customer_id ON Orders (CustomerID);
 -- indexes for foreign keys in 
 CREATE INDEX idx_order_id ON OrderItems (OrderID);
 CREATE INDEX idx_product_id ON OrderItems (ProductID);
+
+-- create indexes from pk
+CREATE INDEX pk_products_id ON Products(ID);
+CREATE INDEX pk_customers_id ON Customers(ID);
+CREATE INDEX pk_orders_id ON Orders(ID);
